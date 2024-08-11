@@ -3,4 +3,7 @@ const fs = require('fs')
 
 const read = fs.readFileSync('./texts/reading.txt', 'utf-8')
 
-console.log(read);
+//writeen file
+
+const writtenFile= fs.writeFileSync('./texts/writtenByNode', read+ ' jahid the best')
+console.log(writtenFile);
